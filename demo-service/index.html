@@ -26,10 +26,10 @@
           <div class="input__header">
             <h3 class="input__title">Please enter text:</h3>
             <div class="input__control">
-              <button type="button" class="input__control-btn btn">
+              <button type="button" class="input__control-btn btn refresh">
                 Refresh
               </button>
-              <button type="button" class="input__control-btn btn">
+              <button type="button" class="input__control-btn btn clear">
                 Clear
               </button>
             </div>
@@ -40,24 +40,23 @@
               rows="10"
               id="inputText"
               placeholder="Enter text"
-            >
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</textarea
-            >
+            ></textarea>
           </div>
           <div class="input__select">
             <div class="input__container checkbox">
               <h2 class="checkbox__title title">Select checkboxes:</h2>
               <label class="checkbox__control control">
                 <input
+                  id="FirstCheckbox"
                   class="checkbox__input"
                   data-value="First checkbox"
                   type="checkbox"
-                  checked="checked"
                 />
                 <span class="control__text">First checkbox</span>
               </label>
               <label class="checkbox__control control">
                 <input
+                  id="SecondCheckbox"
                   class="checkbox__input"
                   data-value="Second checkbox"
                   type="checkbox"
@@ -66,6 +65,7 @@
               </label>
               <label class="checkbox__control control">
                 <input
+                  id="ThirdCheckbox"
                   class="checkbox__input"
                   data-value="Third checkbox"
                   type="checkbox"
@@ -74,6 +74,7 @@
               </label>
               <label class="checkbox__control control">
                 <input
+                  id="FourthCheckbox"
                   class="checkbox__input"
                   data-value="Fourth checkbox"
                   type="checkbox"
@@ -84,19 +85,44 @@
             <div class="input__container radio">
               <h2 class="radio__title title">Select radio button:</h2>
               <label class="radio__control control">
-                <input class="radio__input" data-value="First radio button" type="radio" name="radio" checked="checked" />
+                <input
+                  id="FirstRadio"
+                  class="radio__input"
+                  data-value="First radio button"
+                  type="radio"
+                  name="radio"
+                  checked="checked"
+                />
                 <span class="control__text">First radio button</span>
               </label>
               <label class="radio__control control">
-                <input class="radio__input" data-value="Second radio button" type="radio" name="radio" />
+                <input
+                  id="SecondRadio"
+                  class="radio__input"
+                  data-value="Second radio button"
+                  type="radio"
+                  name="radio"
+                />
                 <span class="control__text">Second radio button</span>
               </label>
               <label class="radio__control control">
-                <input class="radio__input" data-value="Third radio button" type="radio" name="radio" />
+                <input
+                  id="ThirdRadio"
+                  class="radio__input"
+                  data-value="Third radio button"
+                  type="radio"
+                  name="radio"
+                />
                 <span class="control__text">Third radio button</span>
               </label>
               <label class="radio__control control">
-                <input class="radio__input" data-value="Fourth radio button" type="radio" name="radio" />
+                <input
+                  id="FourthRadio"
+                  class="radio__input"
+                  data-value="Fourth radio button"
+                  type="radio"
+                  name="radio"
+                />
                 <span class="control__text">Fourth radio button</span>
               </label>
             </div>
@@ -114,9 +140,7 @@
         </div>
         <div class="main__input result">
           <h3 class="input__title">Result:</h3>
-          <span class="result__area"
-            >gsagsdggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhtrhe</span
-          >
+          <span class="result__area"></span>
         </div>
       </main>
       <footer class="footer">
