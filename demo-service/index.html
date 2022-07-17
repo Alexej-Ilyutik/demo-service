@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo service</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/customer-support.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Demo Service</h1>
+      </header>
+      <main class="main">
+        <div class="main__input input">
+          <div class="input__header">
+            <h3 class="input__title">Please enter text:</h3>
+            <div class="input__control">
+              <button type="button" class="input__control-btn btn refresh">
+                Refresh
+              </button>
+              <button type="button" class="input__control-btn btn clear">
+                Clear
+              </button>
+            </div>
+          </div>
+          <div class="input__body">
+            <textarea
+              class="input__textarea"
+              rows="10"
+              id="inputText"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="input__select">
+            <div class="input__container checkbox">
+              <h2 class="checkbox__title title">Select checkboxes:</h2>
+              <label class="checkbox__control control">
+                <input
+                  id="FirstCheckbox"
+                  class="checkbox__input"
+                  data-value="First checkbox"
+                  type="checkbox"
+                />
+                <span class="control__text">First checkbox</span>
+              </label>
+              <label class="checkbox__control control">
+                <input
+                  id="SecondCheckbox"
+                  class="checkbox__input"
+                  data-value="Second checkbox"
+                  type="checkbox"
+                />
+                <span class="control__text">Second checkbox</span>
+              </label>
+              <label class="checkbox__control control">
+                <input
+                  id="ThirdCheckbox"
+                  class="checkbox__input"
+                  data-value="Third checkbox"
+                  type="checkbox"
+                />
+                <span class="control__text">Third checkbox</span>
+              </label>
+              <label class="checkbox__control control">
+                <input
+                  id="FourthCheckbox"
+                  class="checkbox__input"
+                  data-value="Fourth checkbox"
+                  type="checkbox"
+                />
+                <span class="control__text">Fourth checkbox</span>
+              </label>
+            </div>
+            <div class="input__container radio">
+              <h2 class="radio__title title">Select radio button:</h2>
+              <label class="radio__control control">
+                <input
+                  id="FirstRadio"
+                  class="radio__input"
+                  data-value="First radio button"
+                  type="radio"
+                  name="radio"
+                  checked="checked"
+                />
+                <span class="control__text">First radio button</span>
+              </label>
+              <label class="radio__control control">
+                <input
+                  id="SecondRadio"
+                  class="radio__input"
+                  data-value="Second radio button"
+                  type="radio"
+                  name="radio"
+                />
+                <span class="control__text">Second radio button</span>
+              </label>
+              <label class="radio__control control">
+                <input
+                  id="ThirdRadio"
+                  class="radio__input"
+                  data-value="Third radio button"
+                  type="radio"
+                  name="radio"
+                />
+                <span class="control__text">Third radio button</span>
+              </label>
+              <label class="radio__control control">
+                <input
+                  id="FourthRadio"
+                  class="radio__input"
+                  data-value="Fourth radio button"
+                  type="radio"
+                  name="radio"
+                />
+                <span class="control__text">Fourth radio button</span>
+              </label>
+            </div>
+            <div class="input__container option">
+              <h2 class="option__title title">Choose an option:</h2>
+              <select id="select" name="selector" class="option__select">
+                <option value="First option">First option</option>
+                <option value="Second option">Second option</option>
+                <option value="Third option">Third option</option>
+                <option value="Fourth option">Fourth option</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="input__result btn">Get result</button>
+        </div>
+        <div class="main__input result">
+          <h3 class="input__title">Result:</h3>
+          <span class="result__area"></span>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__link">
+          <img src="assets/github.svg" alt="GitHub" />
+          <a href="https://github.com/Alexej-Ilyutik" target="_blank">
+            Alexej Ilyutik
+          </a>
+        </div>
+        <p>2022</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
