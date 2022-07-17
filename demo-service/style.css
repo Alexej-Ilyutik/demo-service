@@ -1,14 +1,11 @@
 :root {
   --text-color: #fff;
-  --text-calc: rgb(27, 27, 27);
+  --text-dark: rgb(27, 27, 27);
   --bg-color: rgba(0, 0, 0, 0.25);
   --main-color: rgb(45, 52, 71);
-  --calc-color: rgb(82, 91, 114);
-  --calc-screen-color: rgb(194, 225, 249);
-  --calc-C-color: rgb(152, 46, 46);
-  --calc-operator-color: rgb(160, 159, 159);
-  --calc-equals-color: rgb(53, 53, 109);
-  --calc-often-color: rgb(82, 80, 90);
+  --second-bg-color: rgb(169, 173, 182);
+  --btn-bg-color: rgb(187, 198, 223);
+  --btn-bg-rez: rgb(36, 186, 69);
 }
 
 * {
@@ -52,6 +49,103 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.main__input {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--second-bg-color);
+  padding: 3rem 2rem;
+}
+.main__input .input__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__input .input__header .input__title {
+  font-size: 4rem;
+}
+.main__input .input__header .input__control {
+  display: flex;
+  gap: 2rem;
+}
+.main__input .input__body {
+  width: 100%;
+}
+.main__input .input__body .input__textarea {
+  padding: 2rem;
+  font-size: 3rem;
+  color: var(--text-dark);
+  width: 100%;
+  resize: vertical;
+  height: 30rem;
+  max-height: 80rem;
+}
+.main__input .input__select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main__input .input__select .input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__input .input__select .input__container .control {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+.main__input .input__select .input__container .control input {
+  width: 3rem;
+  height: 3rem;
+}
+.main__input .input__select .input__container .control .control__text {
+  font-size: 2.5rem;
+}
+.main__input .input__select .option .option__select {
+  width: 20rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  background-image: none;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.5rem;
+}
+.main__input .input__select .option .option__select option {
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+.main__input .input__rezult {
+  width: 30rem;
+  margin: 0 auto;
+  background-color: var(--btn-bg-rez);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.btn {
+  width: 15rem;
+  height: 5rem;
+  color: var(--text-dark);
+  font-size: 2.8rem;
+  cursor: pointer;
+  border: 0.5rem solid var(--main-color);
+  border-radius: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: var(--btn-bg-color);
 }
 
 .footer {
