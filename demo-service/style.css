@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5rem 1rem;
 }
 
 .main__input {
@@ -58,17 +59,20 @@ body {
   gap: 2rem;
   background-color: var(--second-bg-color);
   padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 3rem 0.3rem rgba(0, 0, 0, 0.42), 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
 }
 .main__input .input__header {
   display: flex;
   justify-content: space-between;
-}
-.main__input .input__header .input__title {
-  font-size: 4rem;
+  align-items: center;
 }
 .main__input .input__header .input__control {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  flex-direction: row-reverse;
 }
 .main__input .input__body {
   width: 100%;
@@ -81,11 +85,14 @@ body {
   resize: vertical;
   height: 30rem;
   max-height: 80rem;
+  border-radius: 0.5rem;
 }
 .main__input .input__select {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .main__input .input__select .input__container {
   display: flex;
@@ -121,7 +128,7 @@ body {
   font-size: 2rem;
   color: var(--text-dark);
 }
-.main__input .input__rezult {
+.main__input .input__result {
   width: 30rem;
   margin: 0 auto;
   background-color: var(--btn-bg-rez);
@@ -131,6 +138,10 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.8rem;
+}
+
+.input__title {
+  font-size: 4rem;
 }
 
 .btn {
@@ -146,6 +157,25 @@ body {
 .btn:hover {
   transform: scale(1.05);
   background-color: var(--btn-bg-color);
+}
+
+.result {
+  display: none;
+}
+.result .result__area {
+  width: 100%;
+  height: auto;
+  background-color: var(--text-color);
+  color: var(--text-dark);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  word-wrap: break-word;
+  line-height: 2.8rem;
+}
+.result .result__area b {
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .footer {
@@ -172,4 +202,13 @@ body {
 }
 .footer p {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1120px) {
+  * {
+    font-size: 50%;
+  }
+  .input .input__select {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
